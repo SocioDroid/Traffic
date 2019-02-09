@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>20. cliff-motorbike-helmet-black-1-ak07-24-full-face-vega-original-imaedhrvhhuzsfhz.jpeg</filename>
+	<path>/home/rutik/Desktop/HELMETs/20. cliff-motorbike-helmet-black-1-ak07-24-full-face-vega-original-imaedhrvhhuzsfhz.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>612</width>
+		<height>595</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>32</xmin>
+			<ymin>5</ymin>
+			<xmax>612</xmax>
+			<ymax>558</ymax>
+		</bndbox>
+	</object>
+</annotation>

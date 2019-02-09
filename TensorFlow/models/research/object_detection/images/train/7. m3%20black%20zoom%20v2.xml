@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>7. m3%20black%20zoom%20v2.png</filename>
+	<path>/home/rutik/Desktop/HELMETs/7. m3%20black%20zoom%20v2.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1000</width>
+		<height>1000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>98</xmin>
+			<ymin>90</ymin>
+			<xmax>922</xmax>
+			<ymax>990</ymax>
+		</bndbox>
+	</object>
+</annotation>

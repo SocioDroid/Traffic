@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>2. studds-chrome-economy-full-face-helmet-helmets-studds-xl-head-size-60-cm-black_480x480.png</filename>
+	<path>/home/rutik/Desktop/HELMETs/2. studds-chrome-economy-full-face-helmet-helmets-studds-xl-head-size-60-cm-black_480x480.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>308</width>
+		<height>324</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3</xmin>
+			<ymin>1</ymin>
+			<xmax>308</xmax>
+			<ymax>318</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>3. md300517repd_main-agv-k-3-sv-mir-2017-helmet-blue-orange-yellow-1.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/3. md300517repd_main-agv-k-3-sv-mir-2017-helmet-blue-orange-yellow-1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>450</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>48</xmin>
+			<ymin>1</ymin>
+			<xmax>410</xmax>
+			<ymax>450</ymax>
+		</bndbox>
+	</object>
+</annotation>

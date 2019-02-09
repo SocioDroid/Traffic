@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>24. wildking-vega-helmet-500x500.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/24. wildking-vega-helmet-500x500.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>45</xmin>
+			<ymin>37</ymin>
+			<xmax>492</xmax>
+			<ymax>472</ymax>
+		</bndbox>
+	</object>
+</annotation>

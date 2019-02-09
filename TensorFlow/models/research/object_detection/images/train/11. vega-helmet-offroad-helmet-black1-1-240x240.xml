@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>11. vega-helmet-offroad-helmet-black1-1-240x240.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/11. vega-helmet-offroad-helmet-black1-1-240x240.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>240</width>
+		<height>240</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>32</ymin>
+			<xmax>230</xmax>
+			<ymax>202</ymax>
+		</bndbox>
+	</object>
+</annotation>

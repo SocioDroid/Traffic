@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>1. agvk3_sv_five_continents_helmets_blue_300x300.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/1. agvk3_sv_five_continents_helmets_blue_300x300.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>300</width>
+		<height>300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>6</xmin>
+			<ymin>4</ymin>
+			<xmax>290</xmax>
+			<ymax>295</ymax>
+		</bndbox>
+	</object>
+</annotation>

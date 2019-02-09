@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>19. axxis-draken-solid-matt-black-helmet-1.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/19. axxis-draken-solid-matt-black-helmet-1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>544</width>
+		<height>544</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>29</xmin>
+			<ymin>35</ymin>
+			<xmax>540</xmax>
+			<ymax>532</ymax>
+		</bndbox>
+	</object>
+</annotation>

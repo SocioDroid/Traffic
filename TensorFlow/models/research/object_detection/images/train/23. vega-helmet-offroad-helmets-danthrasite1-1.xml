@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>23. vega-helmet-offroad-helmets-danthrasite1-1.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/23. vega-helmet-offroad-helmets-danthrasite1-1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>700</width>
+		<height>599</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>28</xmin>
+			<ymin>42</ymin>
+			<xmax>660</xmax>
+			<ymax>549</ymax>
+		</bndbox>
+	</object>
+</annotation>

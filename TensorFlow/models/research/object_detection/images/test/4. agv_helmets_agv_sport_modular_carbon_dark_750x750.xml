@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>4. agv_helmets_agv_sport_modular_carbon_dark_750x750.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/4. agv_helmets_agv_sport_modular_carbon_dark_750x750.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>750</width>
+		<height>750</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>52</xmin>
+			<ymin>2</ymin>
+			<xmax>691</xmax>
+			<ymax>750</ymax>
+		</bndbox>
+	</object>
+</annotation>

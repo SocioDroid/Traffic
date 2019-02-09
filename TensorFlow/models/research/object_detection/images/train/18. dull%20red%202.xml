@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>18. dull%20red%202.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/18. dull%20red%202.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>700</width>
+		<height>599</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>56</xmin>
+			<ymin>37</ymin>
+			<xmax>632</xmax>
+			<ymax>512</ymax>
+		</bndbox>
+	</object>
+</annotation>

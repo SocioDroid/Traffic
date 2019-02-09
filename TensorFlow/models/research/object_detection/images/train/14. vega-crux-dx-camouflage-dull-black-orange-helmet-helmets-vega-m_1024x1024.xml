@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>14. vega-crux-dx-camouflage-dull-black-orange-helmet-helmets-vega-m_1024x1024.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/14. vega-crux-dx-camouflage-dull-black-orange-helmet-helmets-vega-m_1024x1024.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>700</width>
+		<height>599</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>97</xmin>
+			<ymin>64</ymin>
+			<xmax>609</xmax>
+			<ymax>512</ymax>
+		</bndbox>
+	</object>
+</annotation>
