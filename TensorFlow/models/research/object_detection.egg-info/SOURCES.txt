@@ -442,6 +442,7 @@ delf/delf/python/examples/extract_features.py
 delf/delf/python/examples/match_images.py
 delf/delf/python/examples/matched_images_example.png
 differential_privacy/README.md
+dist/object_detection-0.1-py3.6.egg
 domain_adaptation/README.md
 domain_adaptation/WORKSPACE
 domain_adaptation/__init__.py
