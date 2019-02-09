@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>25. bell-rogue-cruiser-motorcycle-helmet-honor-matte-titanium-black-right_6.png</filename>
+	<path>/home/rutik/Desktop/HELMETs/25. bell-rogue-cruiser-motorcycle-helmet-honor-matte-titanium-black-right_6.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>72</ymin>
+			<xmax>584</xmax>
+			<ymax>555</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>7. agv-agv-pista-gp-r-soleluna-2018-rossi-helmet-free.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/7. agv-agv-pista-gp-r-soleluna-2018-rossi-helmet-free.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>921</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>11</xmin>
+			<ymin>4</ymin>
+			<xmax>911</xmax>
+			<ymax>1024</ymax>
+		</bndbox>
+	</object>
+</annotation>

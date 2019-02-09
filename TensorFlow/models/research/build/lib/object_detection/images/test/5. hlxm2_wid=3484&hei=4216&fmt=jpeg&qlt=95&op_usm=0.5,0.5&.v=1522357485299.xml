@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>5. hlxm2?wid=3484&amp;hei=4216&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1522357485299.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/5. hlxm2?wid=3484&amp;hei=4216&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1522357485299.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3484</width>
+		<height>4216</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>88</xmin>
+			<ymin>107</ymin>
+			<xmax>3484</xmax>
+			<ymax>3986</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>23. vega-helmet-axor-force-black-sdl229349530-1-77ebc.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/23. vega-helmet-axor-force-black-sdl229349530-1-77ebc.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>620</width>
+		<height>726</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>66</xmin>
+			<ymin>150</ymin>
+			<xmax>556</xmax>
+			<ymax>601</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>4. bell-revolver-evo-street-full-face-motorcycle-helmet-matte-rally-black-white-right.png</filename>
+	<path>/home/rutik/Desktop/HELMETs/4. bell-revolver-evo-street-full-face-motorcycle-helmet-matte-rally-black-white-right.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>54</xmin>
+			<ymin>69</ymin>
+			<xmax>545</xmax>
+			<ymax>555</ymax>
+		</bndbox>
+	</object>
+</annotation>

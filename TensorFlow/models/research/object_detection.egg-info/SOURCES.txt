@@ -1,3 +1,4 @@
+.gitattributes
 README.md
 setup.py
 a3c_blogpost/README.md
@@ -1028,6 +1029,7 @@ object_detection/resizer.py
 object_detection/sizeChecker.py
 object_detection/test.mov
 object_detection/test1.JPG
+object_detection/train.py
 object_detection/xml_to_csv.py
 object_detection.egg-info/PKG-INFO
 object_detection.egg-info/SOURCES.txt
@@ -1202,6 +1204,10 @@ object_detection/g3doc/img/oxford_pet.png
 object_detection/g3doc/img/tensorboard.png
 object_detection/g3doc/img/tensorboard2.png
 object_detection/g3doc/img/tf-od-api-logo.png
+object_detection/images/test.tar
+object_detection/images/test_labels.csv
+object_detection/images/train.tar
+object_detection/images/train_labels.csv
 object_detection/inference/__init__.py
 object_detection/inference/detection_inference.py
 object_detection/inference/detection_inference_test.py
@@ -1209,7 +1215,6 @@ object_detection/inference/infer_detections.py
 object_detection/legacy/__init__.py
 object_detection/legacy/eval.py
 object_detection/legacy/evaluator.py
-object_detection/legacy/train.py
 object_detection/legacy/trainer.py
 object_detection/legacy/trainer_test.py
 object_detection/matchers/__init__.py

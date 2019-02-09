@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>19. studds-chrome-elite-sus_ceffh_blkl-full-face-helmet-500x500.png</filename>
+	<path>/home/rutik/Desktop/HELMETs/19. studds-chrome-elite-sus_ceffh_blkl-full-face-helmet-500x500.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>465</width>
+		<height>477</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>55</xmin>
+			<ymin>32</ymin>
+			<xmax>407</xmax>
+			<ymax>436</ymax>
+		</bndbox>
+	</object>
+</annotation>

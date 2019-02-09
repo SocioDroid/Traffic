@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>9. rj-platinum-r-crystalwhite.png</filename>
+	<path>/home/rutik/Desktop/HELMETs/9. rj-platinum-r-crystalwhite.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>560</width>
+		<height>560</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>12</xmin>
+			<ymin>34</ymin>
+			<xmax>559</xmax>
+			<ymax>551</ymax>
+		</bndbox>
+	</object>
+</annotation>

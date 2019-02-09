@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>7. studds-shifter-d1-n5-series-full-face-helmet-28-matt-black-29-500x500.png</filename>
+	<path>/home/rutik/Desktop/HELMETs/7. studds-shifter-d1-n5-series-full-face-helmet-28-matt-black-29-500x500.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>413</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>25</xmin>
+			<ymin>2</ymin>
+			<xmax>457</xmax>
+			<ymax>413</ymax>
+		</bndbox>
+	</object>
+</annotation>

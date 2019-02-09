@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>15. agv-k-3-sv-elements-005_01.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/15. agv-k-3-sv-elements-005_01.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1500</width>
+		<height>1500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>59</xmin>
+			<ymin>20</ymin>
+			<xmax>1466</xmax>
+			<ymax>1468</ymax>
+		</bndbox>
+	</object>
+</annotation>

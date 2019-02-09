@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>7. 920-1-vega-60-full-face-crux-original-imaeyvr4bhdvdyn8.jpeg</filename>
+	<path>/home/rutik/Desktop/HELMETs/7. 920-1-vega-60-full-face-crux-original-imaeyvr4bhdvdyn8.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>792</width>
+		<height>832</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>3</ymin>
+			<xmax>787</xmax>
+			<ymax>832</ymax>
+		</bndbox>
+	</object>
+</annotation>

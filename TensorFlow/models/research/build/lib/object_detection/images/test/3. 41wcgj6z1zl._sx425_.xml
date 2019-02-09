@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>3. 41wcgj6z1zl._sx425_.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/3. 41wcgj6z1zl._sx425_.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>425</width>
+		<height>394</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>18</xmin>
+			<ymin>11</ymin>
+			<xmax>423</xmax>
+			<ymax>384</ymax>
+		</bndbox>
+	</object>
+</annotation>

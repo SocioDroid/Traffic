@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>3. sol-sl-68s-ii-flat-black-helmet.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/3. sol-sl-68s-ii-flat-black-helmet.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>458</width>
+		<height>458</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>47</xmin>
+			<ymin>34</ymin>
+			<xmax>410</xmax>
+			<ymax>425</ymax>
+		</bndbox>
+	</object>
+</annotation>

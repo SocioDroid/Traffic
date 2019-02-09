@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>19. main_99432-11b_mod3_matte-white_001_105345_png_herosq.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/19. main_99432-11b_mod3_matte-white_001_105345_png_herosq.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>97</xmin>
+			<ymin>41</ymin>
+			<xmax>564</xmax>
+			<ymax>560</ymax>
+		</bndbox>
+	</object>
+</annotation>

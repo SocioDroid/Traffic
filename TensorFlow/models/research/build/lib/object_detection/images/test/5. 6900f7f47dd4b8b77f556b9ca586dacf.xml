@@ -1,0 +1,26 @@
+<annotation>
+	<folder>HELMETs</folder>
+	<filename>5. 6900f7f47dd4b8b77f556b9ca586dacf.jpg</filename>
+	<path>/home/rutik/Desktop/HELMETs/5. 6900f7f47dd4b8b77f556b9ca586dacf.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>12</xmin>
+			<ymin>5</ymin>
+			<xmax>600</xmax>
+			<ymax>589</ymax>
+		</bndbox>
+	</object>
+</annotation>
