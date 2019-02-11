@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Dataset_Renamed</folder>
+	<filename>image303.jpg</filename>
+	<path>/root/TensorFlow/Dataset_Renamed/image303.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>278</width>
+		<height>182</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>140</xmin>
+			<ymin>32</ymin>
+			<xmax>174</xmax>
+			<ymax>62</ymax>
+		</bndbox>
+	</object>
+</annotation>

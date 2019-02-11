@@ -1030,6 +1030,7 @@ object_detection/sizeChecker.py
 object_detection/test.mov
 object_detection/test1.JPG
 object_detection/train.py
+object_detection/train.record
 object_detection/xml_to_csv.py
 object_detection.egg-info/PKG-INFO
 object_detection.egg-info/SOURCES.txt
