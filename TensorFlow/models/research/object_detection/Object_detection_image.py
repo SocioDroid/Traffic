@@ -47,7 +47,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 6
+NUM_CLASSES = 1
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -110,6 +110,7 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     min_score_thresh=0.80)
 
 # All the results have been drawn on image. Now display the image.
+cv2.imwrite('test1_tested.jpg',image)
 cv2.imshow('Object detector', image)
 
 # Press any key to close the image
