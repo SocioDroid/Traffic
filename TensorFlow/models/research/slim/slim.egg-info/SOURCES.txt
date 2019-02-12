@@ -30,6 +30,7 @@ datasets/process_bounding_boxes.py
 deployment/__init__.py
 deployment/model_deploy.py
 deployment/model_deploy_test.py
+dist/slim-0.1-py3.6.egg
 nets/__init__.py
 nets/alexnet.py
 nets/alexnet_test.py
