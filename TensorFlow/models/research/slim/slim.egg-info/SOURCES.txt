@@ -30,6 +30,8 @@ datasets/process_bounding_boxes.py
 deployment/__init__.py
 deployment/model_deploy.py
 deployment/model_deploy_test.py
+deployment/__pycache__/__init__.cpython-36.pyc
+deployment/__pycache__/model_deploy.cpython-36.pyc
 dist/slim-0.1-py3.6.egg
 nets/__init__.py
 nets/alexnet.py
@@ -76,6 +78,14 @@ nets/s3dg.py
 nets/s3dg_test.py
 nets/vgg.py
 nets/vgg_test.py
+nets/__pycache__/__init__.cpython-36.pyc
+nets/__pycache__/inception_resnet_v2.cpython-36.pyc
+nets/__pycache__/inception_utils.cpython-36.pyc
+nets/__pycache__/inception_v2.cpython-36.pyc
+nets/__pycache__/inception_v3.cpython-36.pyc
+nets/__pycache__/mobilenet_v1.cpython-36.pyc
+nets/__pycache__/resnet_utils.cpython-36.pyc
+nets/__pycache__/resnet_v1.cpython-36.pyc
 nets/mobilenet/README.md
 nets/mobilenet/__init__.py
 nets/mobilenet/conv_blocks.py
@@ -85,6 +95,10 @@ nets/mobilenet/mobilenet.py
 nets/mobilenet/mobilenet_example.ipynb
 nets/mobilenet/mobilenet_v2.py
 nets/mobilenet/mobilenet_v2_test.py
+nets/mobilenet/__pycache__/__init__.cpython-36.pyc
+nets/mobilenet/__pycache__/conv_blocks.cpython-36.pyc
+nets/mobilenet/__pycache__/mobilenet.cpython-36.pyc
+nets/mobilenet/__pycache__/mobilenet_v2.cpython-36.pyc
 nets/nasnet/README.md
 nets/nasnet/__init__.py
 nets/nasnet/nasnet.py
@@ -93,6 +107,10 @@ nets/nasnet/nasnet_utils.py
 nets/nasnet/nasnet_utils_test.py
 nets/nasnet/pnasnet.py
 nets/nasnet/pnasnet_test.py
+nets/nasnet/__pycache__/__init__.cpython-36.pyc
+nets/nasnet/__pycache__/nasnet.cpython-36.pyc
+nets/nasnet/__pycache__/nasnet_utils.cpython-36.pyc
+nets/nasnet/__pycache__/pnasnet.cpython-36.pyc
 preprocessing/__init__.py
 preprocessing/cifarnet_preprocessing.py
 preprocessing/inception_preprocessing.py

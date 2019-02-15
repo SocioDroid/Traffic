@@ -1,26 +1,26 @@
 <annotation>
-	<folder>nohelmet</folder>
+	<folder>train</folder>
 	<filename>image59.jpg</filename>
-	<path>/root/TensorFlow/Dataset/nohelmet/image59.jpg</path>
+	<path>/root/TensorFlow/Dataset_New/train/image59.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>2340</width>
-		<height>4160</height>
+		<width>468</width>
+		<height>832</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
 	<object>
 		<name>nohelmet</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
+		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>417</xmin>
-			<ymin>526</ymin>
-			<xmax>1410</xmax>
-			<ymax>2033</ymax>
+			<xmin>1</xmin>
+			<ymin>115</ymin>
+			<xmax>329</xmax>
+			<ymax>679</ymax>
 		</bndbox>
 	</object>
 </annotation>

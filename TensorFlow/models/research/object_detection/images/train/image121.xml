@@ -1,13 +1,13 @@
 <annotation>
-	<folder>nohelmet</folder>
+	<folder>train</folder>
 	<filename>image121.jpg</filename>
-	<path>/root/TensorFlow/Dataset/nohelmet/image121.jpg</path>
+	<path>/root/TensorFlow/Dataset_New/train/image121.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>2340</width>
-		<height>4160</height>
+		<width>468</width>
+		<height>832</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>723</xmin>
-			<ymin>419</ymin>
-			<xmax>1637</xmax>
-			<ymax>1946</ymax>
+			<xmin>8</xmin>
+			<ymin>102</ymin>
+			<xmax>439</xmax>
+			<ymax>534</ymax>
 		</bndbox>
 	</object>
 </annotation>

@@ -1,13 +1,13 @@
 <annotation>
-	<folder>helmet</folder>
+	<folder>test</folder>
 	<filename>image131.jpg</filename>
-	<path>/root/TensorFlow/Dataset/helmet/image131.jpg</path>
+	<path>/root/TensorFlow/Dataset_New/test/image131.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>2340</width>
-		<height>4160</height>
+		<width>468</width>
+		<height>832</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>177</xmin>
-			<ymin>653</ymin>
-			<xmax>1777</xmax>
-			<ymax>3086</ymax>
+			<xmin>184</xmin>
+			<ymin>146</ymin>
+			<xmax>284</xmax>
+			<ymax>248</ymax>
 		</bndbox>
 	</object>
 </annotation>
