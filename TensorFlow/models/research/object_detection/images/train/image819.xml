@@ -1,0 +1,26 @@
+<annotation>
+	<folder>nohelmet</folder>
+	<filename>image819.jpg</filename>
+	<path>/root/TensorFlow/Dataset/nohelmet/image819.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2340</width>
+		<height>4160</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>nohelmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1070</xmin>
+			<ymin>666</ymin>
+			<xmax>2130</xmax>
+			<ymax>2486</ymax>
+		</bndbox>
+	</object>
+</annotation>

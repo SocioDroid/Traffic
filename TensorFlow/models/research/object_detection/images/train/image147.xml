@@ -1,0 +1,26 @@
+<annotation>
+	<folder>helmet</folder>
+	<filename>image147.jpg</filename>
+	<path>/root/TensorFlow/Dataset/helmet/image147.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2340</width>
+		<height>4160</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>310</xmin>
+			<ymin>173</ymin>
+			<xmax>1970</xmax>
+			<ymax>3313</ymax>
+		</bndbox>
+	</object>
+</annotation>
