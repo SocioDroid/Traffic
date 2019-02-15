@@ -32,7 +32,7 @@ from utils import visualization_utils as vis_util
 
 # Name of the directory containing the object detection module we're using
 MODEL_NAME = 'inference_graph'
-VIDEO_NAME = 'test.mov'
+VIDEO_NAME = 'test.avi'
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
@@ -48,7 +48,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_VIDEO = os.path.join(CWD_PATH,VIDEO_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 6
+NUM_CLASSES = 2
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -89,9 +89,11 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
 # Open video file
 video = cv2.VideoCapture(PATH_TO_VIDEO)
+#fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+#out = cv2.VideoWriter('test_detected.avi',fourcc, 30, (454,180),False)
 
 while(video.isOpened()):
-
+    i=0
     # Acquire frame and expand frame dimensions to have shape: [1, None, None, 3]
     # i.e. a single-column array, where each item in the column has the pixel RGB value
     ret, frame = video.read()
@@ -114,7 +116,12 @@ while(video.isOpened()):
         min_score_thresh=0.80)
 
     # All the results have been drawn on the frame, so it's time to display it.
-    cv2.imshow('Object detector', frame)
+      
+    #out.write(frame)
+    vid_name="test_images/test_detected_vid"+str(i)+".jpg"
+    cv2.imwrite(vid_name,frame)
+    i = i+1
+    #cv2.imshow('Object detector', frame)
 
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
@@ -122,4 +129,5 @@ while(video.isOpened()):
 
 # Clean up
 video.release()
+#out.release()
 cv2.destroyAllWindows()
