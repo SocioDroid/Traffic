@@ -93,8 +93,8 @@ video = cv2.VideoCapture(PATH_TO_VIDEO)
 #SAVE VIDEO TO FILE
 filename="testoutput.avi"
 codec=cv2.VideoWriter_fourcc('m','p','4','v')#fourcc stands for four character code
-framerate=24
-resolution=(854,480)
+framerate=30
+resolution=(1280,720)
 VideoFileOutput=cv2.VideoWriter(filename,codec,framerate, resolution)
 count = 0
 threshold = 0.9999
@@ -142,7 +142,7 @@ while(video.isOpened()):
 
 
     #SAVE VIDO INTO TESTOUTPUT.AVI
-    #VideoFileOutput.write(frame)
+    VideoFileOutput.write(frame)
     #cv2.imshow('Object detector', frame)
 
     # Press 'q' to quit
@@ -150,6 +150,7 @@ while(video.isOpened()):
         #break
 #delete duplicate
 os.system("cd /content/Traffic/TensorFlow/models/research/object_detection/duplicate-images")
+os.system("pwd")
 os.system("python duplicate_finder.py clear")
 os.system("python duplicate_finder.py add ../test_images")
 os.system("python duplicate_finder.py find --delete")
