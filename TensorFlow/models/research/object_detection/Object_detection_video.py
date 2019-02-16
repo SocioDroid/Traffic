@@ -23,7 +23,6 @@ import numpy as np
 import tensorflow as tf
 import sys
 
-	
 def count_frames_manual(video):
 	# initialize the total number of frames read
 	total = 0
@@ -43,7 +42,6 @@ def count_frames_manual(video):
  
 	# return the total number of frames in the video file
 	return total
-
 
 # This is needed since the notebook is stored in the object_detection folder.
 sys.path.append("..")
@@ -70,7 +68,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_VIDEO = os.path.join(CWD_PATH,VIDEO_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 2
+NUM_CLASSES = 6
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -124,7 +122,8 @@ resolution=(1280,720)
 VideoFileOutput=cv2.VideoWriter(filename,codec,framerate, resolution)
 VideoFileOutput2=cv2.VideoWriter("testoutput2.avi",codec,framerate, resolution)
 count = 0
-threshold = 0.9999
+threshold = 0.8
+
 while(video.isOpened()):
     objects = []
     i=0
@@ -134,48 +133,38 @@ while(video.isOpened()):
     frame_expanded = np.expand_dims(frame, axis=0)
 
     # Perform the actual detection by running the model with the image as input
-    (boxes, scores, classes, num) = sess.run(
-        [detection_boxes, detection_scores, detection_classes, num_detections],
-        feed_dict={image_tensor: frame_expanded})
-
-    # Draw the results of the detection (aka 'visulaize the results')
-    vis_util.visualize_boxes_and_labels_on_image_array(
-        frame,
-        np.squeeze(boxes),
-        np.squeeze(classes).astype(np.int32),
-        np.squeeze(scores),
-        category_index,
-        use_normalized_coordinates=True,
-        line_thickness=2,
-        min_score_thresh=0.80)
-
+    try:
+        (boxes, scores, classes, num) = sess.run(
+            [detection_boxes, detection_scores, detection_classes, num_detections],
+            feed_dict={image_tensor: frame_expanded})
+       
+        # Draw the results of the detection (aka 'visulaize the results')
+        vis_util.visualize_boxes_and_labels_on_image_array(
+            frame,
+            np.squeeze(boxes),
+            np.squeeze(classes).astype(np.int32),
+            np.squeeze(scores),
+            category_index,
+            use_normalized_coordinates=True,
+            line_thickness=8,
+            min_score_thresh=0.80)
+    except TypeError:
+       break
     # All the results have been drawn on the frame, so it's time to display it.
-
-
-    for index, value in enumerate(classes[0]):
-      object_dict = {}
-      if scores[0, index] > threshold:
-       object_dict[(category_index.get(value)).get('name').encode('utf8')] = scores[0,index]
-       objects.append(object_dict)
-    print (count)
-    print(objects)
-
-    if not objects :
-        cv2.imwrite("test_images/frame%d.jpg" % count, frame)
-        VideoFileOutput2.write(frame)
-        count = count + 1
-
-
-
-    #SAVE VIDO INTO TESTOUTPUT.AVI
-    VideoFileOutput.write(frame)
     #cv2.imshow('Object detector', frame)
 
+    if not objects :
+        #cv2.imwrite("test_images/frame%d.jpg" % count, frame)
+        VideoFileOutput2.write(frame)
+        count = count + 1
+    
+    VideoFileOutput.write(frame)
+
     # Press 'q' to quit
-    #if cv2.waitKey(1) == ord('q'):
-        #break
+    if cv2.waitKey(1) == ord('q'):
+        break
 
 # Clean up
-VideoFileOutput.release()
+os.system("python openALPR.py testoutput2.avi")
 video.release()
 cv2.destroyAllWindows()

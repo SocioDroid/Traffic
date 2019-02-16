@@ -47,7 +47,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_IMAGE = os.path.join(CWD_PATH,IMAGE_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 2
+NUM_CLASSES = 6
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -99,35 +99,18 @@ image_expanded = np.expand_dims(image, axis=0)
 
 # Draw the results of the detection (aka 'visulaize the results')
 
-imgF,coords=vis_util.visualize_boxes_and_labels_on_image_array(
+vis_util.visualize_boxes_and_labels_on_image_array(
     image,
     np.squeeze(boxes),
     np.squeeze(classes).astype(np.int32),
     np.squeeze(scores),
     category_index,
     use_normalized_coordinates=True,
-    line_thickness=2)
+    line_thickness=8,
+    min_score_thresh=0.80)
 
-print (coords)
 # All the results have been drawn on image. Now display the image.
-"""
-threshold = 0.5
-objects = []
-for index, value in enumerate(classes[0]):
-  object_dict = {}
-  if scores[0, index] > threshold:
-    object_dict[(category_index.get(value)).get('name').encode('utf8')] = scores[0, index]
-    objects.append(object_dict)
-
-if b'helmet' in objects[0].keys():
-    print ("HElmet Found")
-
-if b'nohelmet' in objects[0].keys():
-    print ("HElmet Found")
-print(objects[0][b'helmet'])
-"""
-#Image Save
-cv2.imwrite('test1_tested.jpg',image)
+cv2.imwrite('test_detected.jpg', image)
 cv2.imshow('Object detector', image)
 
 # Press any key to close the image
