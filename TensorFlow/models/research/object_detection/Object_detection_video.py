@@ -23,6 +23,28 @@ import numpy as np
 import tensorflow as tf
 import sys
 
+	
+def count_frames_manual(video):
+	# initialize the total number of frames read
+	total = 0
+ 
+	# loop over the frames of the video
+	while True:
+		# grab the current frame
+		(grabbed, frame) = video.read()
+	 
+		# check to see if we have reached the end of the
+		# video
+		if not grabbed:
+			break
+ 
+		# increment the total number of frames read
+		total += 1
+ 
+	# return the total number of frames in the video file
+	return total
+
+
 # This is needed since the notebook is stored in the object_detection folder.
 sys.path.append("..")
 
@@ -89,13 +111,18 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
 # Open video file
 video = cv2.VideoCapture(PATH_TO_VIDEO)
-
+video2 = cv2.VideoCapture(PATH_TO_VIDEO)
+total = 0
+total = count_frames_manual(video2)
+print("Total Frames = ")
+print(total)
 #SAVE VIDEO TO FILE
 filename="testoutput.avi"
 codec=cv2.VideoWriter_fourcc('m','p','4','v')#fourcc stands for four character code
 framerate=30
 resolution=(1280,720)
 VideoFileOutput=cv2.VideoWriter(filename,codec,framerate, resolution)
+VideoFileOutput2=cv2.VideoWriter("testoutput2.avi",codec,framerate, resolution)
 count = 0
 threshold = 0.9999
 while(video.isOpened()):
@@ -133,11 +160,10 @@ while(video.isOpened()):
     print (count)
     print(objects)
 
-    if count % 2 == 0:
-        if not objects :
-            cv2.imwrite("test_images/frame%d.jpg" % count, frame)
-    
-    count = count + 1
+    if not objects :
+        cv2.imwrite("test_images/frame%d.jpg" % count, frame)
+        VideoFileOutput2.write(frame)
+        count = count + 1
 
 
 
@@ -148,12 +174,7 @@ while(video.isOpened()):
     # Press 'q' to quit
     #if cv2.waitKey(1) == ord('q'):
         #break
-#delete duplicate
-os.system("cd /content/Traffic/TensorFlow/models/research/object_detection/duplicate-images")
-os.system("pwd")
-os.system("python duplicate_finder.py clear")
-os.system("python duplicate_finder.py add ../test_images")
-os.system("python duplicate_finder.py find --delete")
+
 # Clean up
 VideoFileOutput.release()
 video.release()
