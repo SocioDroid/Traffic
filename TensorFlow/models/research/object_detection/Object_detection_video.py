@@ -130,11 +130,14 @@ while(video.isOpened()):
       if scores[0, index] > threshold:
        object_dict[(category_index.get(value)).get('name').encode('utf8')] = scores[0,index]
        objects.append(object_dict)
-
+    print (count)
     print(objects)
-    if not objects :
-        cv2.imwrite("test_images/frame%d.jpg" % count, frame)
-        count = count + 1
+
+    if count % 2 == 0:
+        if not objects :
+            cv2.imwrite("test_images/frame%d.jpg" % count, frame)
+    
+    count = count + 1
 
 
 
@@ -145,7 +148,11 @@ while(video.isOpened()):
     # Press 'q' to quit
     #if cv2.waitKey(1) == ord('q'):
         #break
-
+#delete duplicate
+os.system("cd /content/Traffic/TensorFlow/models/research/object_detection/duplicate-images")
+os.system("python duplicate_finder.py clear")
+os.system("python duplicate_finder.py add ../test_images")
+os.system("python duplicate_finder.py find --delete")
 # Clean up
 VideoFileOutput.release()
 video.release()
