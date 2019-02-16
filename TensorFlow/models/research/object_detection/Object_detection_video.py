@@ -89,10 +89,17 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 
 # Open video file
 video = cv2.VideoCapture(PATH_TO_VIDEO)
-#fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-#out = cv2.VideoWriter('test_detected.avi',fourcc, 30, (454,180),False)
 
+#SAVE VIDEO TO FILE
+filename="testoutput.avi"
+codec=cv2.VideoWriter_fourcc('m','p','4','v')#fourcc stands for four character code
+framerate=24
+resolution=(854,480)
+VideoFileOutput=cv2.VideoWriter(filename,codec,framerate, resolution)
+count = 0
+threshold = 0.9999
 while(video.isOpened()):
+    objects = []
     i=0
     # Acquire frame and expand frame dimensions to have shape: [1, None, None, 3]
     # i.e. a single-column array, where each item in the column has the pixel RGB value
@@ -112,22 +119,34 @@ while(video.isOpened()):
         np.squeeze(scores),
         category_index,
         use_normalized_coordinates=True,
-        line_thickness=8,
+        line_thickness=2,
         min_score_thresh=0.80)
 
     # All the results have been drawn on the frame, so it's time to display it.
-      
-    #out.write(frame)
-    vid_name="test_images/test_detected_vid"+str(i)+".jpg"
-    cv2.imwrite(vid_name,frame)
-    i = i+1
+
+
+    for index, value in enumerate(classes[0]):
+      object_dict = {}
+      if scores[0, index] > threshold:
+       object_dict[(category_index.get(value)).get('name').encode('utf8')] = scores[0,index]
+       objects.append(object_dict)
+
+    print(objects)
+    if not objects :
+        cv2.imwrite("test_images/frame%d.jpg" % count, frame)
+        count = count + 1
+
+
+
+    #SAVE VIDO INTO TESTOUTPUT.AVI
+    #VideoFileOutput.write(frame)
     #cv2.imshow('Object detector', frame)
 
     # Press 'q' to quit
-    if cv2.waitKey(1) == ord('q'):
-        break
+    #if cv2.waitKey(1) == ord('q'):
+        #break
 
 # Clean up
+VideoFileOutput.release()
 video.release()
-#out.release()
 cv2.destroyAllWindows()

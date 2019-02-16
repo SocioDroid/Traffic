@@ -99,7 +99,7 @@ image_expanded = np.expand_dims(image, axis=0)
 
 # Draw the results of the detection (aka 'visulaize the results')
 
-vis_util.visualize_boxes_and_labels_on_image_array(
+imgF,coords=vis_util.visualize_boxes_and_labels_on_image_array(
     image,
     np.squeeze(boxes),
     np.squeeze(classes).astype(np.int32),
@@ -108,7 +108,25 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     use_normalized_coordinates=True,
     line_thickness=2)
 
+print (coords)
 # All the results have been drawn on image. Now display the image.
+"""
+threshold = 0.5
+objects = []
+for index, value in enumerate(classes[0]):
+  object_dict = {}
+  if scores[0, index] > threshold:
+    object_dict[(category_index.get(value)).get('name').encode('utf8')] = scores[0, index]
+    objects.append(object_dict)
+
+if b'helmet' in objects[0].keys():
+    print ("HElmet Found")
+
+if b'nohelmet' in objects[0].keys():
+    print ("HElmet Found")
+print(objects[0][b'helmet'])
+"""
+#Image Save
 cv2.imwrite('test1_tested.jpg',image)
 cv2.imshow('Object detector', image)
 
