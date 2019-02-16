@@ -1,0 +1,26 @@
+<annotation>
+	<folder>noresize</folder>
+	<filename>image1828.jpg</filename>
+	<path>/root/TensorFlow/Dataset_New2/noresize/image1828.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>355</width>
+		<height>355</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>nohelmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>87</xmin>
+			<ymin>4</ymin>
+			<xmax>299</xmax>
+			<ymax>353</ymax>
+		</bndbox>
+	</object>
+</annotation>

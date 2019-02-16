@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>image149.jpg</filename>
+	<path>/root/TensorFlow/Dataset_New/train/image149.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>468</width>
+		<height>832</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>nohelmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>135</xmin>
+			<ymin>166</ymin>
+			<xmax>379</xmax>
+			<ymax>741</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>resize</folder>
+	<filename>image622.jpg</filename>
+	<path>/home/rutik/Desktop/resize/image622.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>468</width>
+		<height>832</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>181</xmin>
+			<ymin>138</ymin>
+			<xmax>334</xmax>
+			<ymax>362</ymax>
+		</bndbox>
+	</object>
+</annotation>
