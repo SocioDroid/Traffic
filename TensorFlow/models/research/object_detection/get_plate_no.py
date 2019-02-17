@@ -30,14 +30,15 @@ noplat.strip()
 video_name = sys.argv[2]
 
 video = cv2.VideoCapture(video_name)
-
+print(video_name)
 count = 0
+
 while(video.isOpened()):
     ret, frame = video.read()
     count = count +1
-    cv2.imwrite('detected_images/'+noplat+str(count)+'.jpg', frame)
+    cv2.imwrite('detected_images/'+noplat+'.jpg', frame)
     if ret == False :
         break
 
-
 video.release()
+os.system("python uploadFTP.py "+noplat+'.jpg')
