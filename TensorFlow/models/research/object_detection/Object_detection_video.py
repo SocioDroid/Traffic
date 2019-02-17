@@ -146,12 +146,12 @@ while(video.isOpened()):
             np.squeeze(scores),
             category_index,
             use_normalized_coordinates=True,
-            line_thickness=8,
+            line_thickness=2,
             min_score_thresh=0.80)
     except TypeError:
        break
     # All the results have been drawn on the frame, so it's time to display it.
-    #cv2.imshow('Object detector', frame)
+    cv2.imshow('Object detector', frame)
 
     if not objects :
         #cv2.imwrite("test_images/frame%d.jpg" % count, frame)

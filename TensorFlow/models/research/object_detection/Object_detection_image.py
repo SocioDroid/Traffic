@@ -106,7 +106,7 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     np.squeeze(scores),
     category_index,
     use_normalized_coordinates=True,
-    line_thickness=8,
+    line_thickness=2,
     min_score_thresh=0.80)
 
 # All the results have been drawn on image. Now display the image.

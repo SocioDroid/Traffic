@@ -11,7 +11,7 @@ message TrainConfig {
   // Effective batch size to use for training.
   // For TPU (or sync SGD jobs), the batch size per core (or GPU) is going to be
   // `batch_size` / number of cores (or `batch_size` / number of GPUs).
-  optional uint32 batch_size = 2 [default=32];
+  optional uint32 batch_size = 1 [default=32];
 
   // Data augmentation options.
   repeated PreprocessingStep data_augmentation_options = 2;
@@ -51,7 +51,7 @@ message TrainConfig {
 
   // Number of steps to train the DetectionModel for. If 0, will train the model
   // indefinitely.
-  optional uint32 num_steps = 10 [default=0];
+  optional uint32 num_steps = 9 [default=0];
 
   // Number of training steps between replica startup.
   // This flag must be set to 0 if sync_replicas is set to true.
@@ -74,13 +74,13 @@ message TrainConfig {
   optional int32 replicas_to_aggregate = 13 [default=1];
 
   // Maximum number of elements to store within a queue.
-  optional int32 batch_queue_capacity = 20 [default=150];
+  optional int32 batch_queue_capacity = 14 [default=150];
 
   // Number of threads to use for batching.
-  optional int32 num_batch_queue_threads = 20 [default=8];
+  optional int32 num_batch_queue_threads = 15 [default=8];
 
   // Maximum capacity of the queue used to prefetch assembled batches.
-  optional int32 prefetch_queue_capacity = 13 [default=5];
+  optional int32 prefetch_queue_capacity = 16 [default=5];
 
   // If true, boxes with the same coordinates will be merged together.
   // This is useful when each box can have multiple labels.
