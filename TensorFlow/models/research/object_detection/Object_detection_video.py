@@ -52,7 +52,7 @@ from utils import visualization_utils as vis_util
 
 # Name of the directory containing the object detection module we're using
 MODEL_NAME = 'inference_graph'
-VIDEO_NAME = 'test.avi'
+VIDEO_NAME = sys.argv[1]
 
 # Grab path to current working directory
 CWD_PATH = os.getcwd()
@@ -68,7 +68,7 @@ PATH_TO_LABELS = os.path.join(CWD_PATH,'training','labelmap.pbtxt')
 PATH_TO_VIDEO = os.path.join(CWD_PATH,VIDEO_NAME)
 
 # Number of classes the object detector can identify
-NUM_CLASSES = 6
+NUM_CLASSES = 2
 
 # Load the label map.
 # Label maps map indices to category names, so that when our convolution
@@ -151,7 +151,7 @@ while(video.isOpened()):
     except TypeError:
        break
     # All the results have been drawn on the frame, so it's time to display it.
-    cv2.imshow('Object detector', frame)
+    #cv2.imshow('Object detector', frame)
 
     if not objects :
         #cv2.imwrite("test_images/frame%d.jpg" % count, frame)
@@ -163,8 +163,13 @@ while(video.isOpened()):
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
         break
-
+print("O detection")
 # Clean up
+<<<<<<< HEAD
+
+=======
+>>>>>>> d5ca6f54f8d7f579c2c413ec7c2306bde6d5018f
+os.system("pwd")
 os.system("python openALPR.py testoutput2.avi")
 video.release()
 cv2.destroyAllWindows()
