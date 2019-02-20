@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dataset4</folder>
+	<filename>image10654.jpg</filename>
+	<path>/root/TensorFlow/dataset4/image10654.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>267</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>nohelmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>60</xmin>
+			<ymin>8</ymin>
+			<xmax>420</xmax>
+			<ymax>250</ymax>
+		</bndbox>
+	</object>
+</annotation>

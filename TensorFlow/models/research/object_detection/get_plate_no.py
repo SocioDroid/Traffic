@@ -26,6 +26,8 @@ noplat = noplat[:blank]
 
 noplat=re.sub("[^a-zA-Z0-9]+", "", noplat) 
 print(noplat)
+with open('out.txt','w') as f:
+    f.write(noplat)
 
 v_file = str(sys.argv[2])
 

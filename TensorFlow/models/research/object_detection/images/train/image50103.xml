@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Data</folder>
+	<filename>image50103.jpg</filename>
+	<path>/home/rushikesh/Documents/Data/image50103.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>624</width>
+		<height>832</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>nohelmet</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>3</ymin>
+			<xmax>560</xmax>
+			<ymax>738</ymax>
+		</bndbox>
+	</object>
+</annotation>

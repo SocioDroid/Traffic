@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dataset3</folder>
+	<filename>image9000.jpg</filename>
+	<path>/root/TensorFlow/dataset3/image9000.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>194</width>
+		<height>259</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>28</xmin>
+			<ymin>35</ymin>
+			<xmax>78</xmax>
+			<ymax>86</ymax>
+		</bndbox>
+	</object>
+</annotation>

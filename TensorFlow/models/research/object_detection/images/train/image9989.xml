@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Rushi</folder>
+	<filename>image9989.jpg</filename>
+	<path>/home/rushikesh/Documents/Rushi/Rushi/image9989.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>helmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>85</xmin>
+			<ymin>20</ymin>
+			<xmax>119</xmax>
+			<ymax>54</ymax>
+		</bndbox>
+	</object>
+</annotation>

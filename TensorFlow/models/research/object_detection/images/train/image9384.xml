@@ -1,0 +1,14 @@
+<annotation>
+	<folder>dataset3</folder>
+	<filename>image9384.jpg</filename>
+	<path>/root/TensorFlow/dataset3/image9384.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>263</width>
+		<height>192</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+</annotation>

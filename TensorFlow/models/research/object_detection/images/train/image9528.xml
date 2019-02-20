@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Rutik</folder>
+	<filename>image9528.jpg</filename>
+	<path>/home/rutik/Desktop/Rutik/image9528.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>218</width>
+		<height>232</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>nohelmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>47</xmin>
+			<ymin>59</ymin>
+			<xmax>176</xmax>
+			<ymax>180</ymax>
+		</bndbox>
+	</object>
+</annotation>

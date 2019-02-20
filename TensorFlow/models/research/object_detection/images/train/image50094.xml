@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Data</folder>
+	<filename>image50094.jpg</filename>
+	<path>/home/rushikesh/Documents/Data/image50094.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>624</width>
+		<height>832</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>nohelmet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>244</xmin>
+			<ymin>282</ymin>
+			<xmax>398</xmax>
+			<ymax>694</ymax>
+		</bndbox>
+	</object>
+</annotation>

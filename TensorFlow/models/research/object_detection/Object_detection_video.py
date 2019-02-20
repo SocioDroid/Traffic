@@ -118,7 +118,7 @@ print(total)
 filename="testoutput.avi"
 codec=cv2.VideoWriter_fourcc('m','p','4','v')#fourcc stands for four character code
 framerate=30
-resolution=(1280,720)
+resolution=(1920,1080)
 VideoFileOutput=cv2.VideoWriter(filename,codec,framerate, resolution)
 VideoFileOutput2=cv2.VideoWriter("testoutput2.avi",codec,framerate, resolution)
 count = 0
@@ -152,7 +152,6 @@ while(video.isOpened()):
        break
     # All the results have been drawn on the frame, so it's time to display it.
     #cv2.imshow('Object detector', frame)
-
     if not objects :
         #cv2.imwrite("test_images/frame%d.jpg" % count, frame)
         VideoFileOutput2.write(frame)
@@ -165,10 +164,6 @@ while(video.isOpened()):
         break
 print("O detection")
 # Clean up
-<<<<<<< HEAD
-
-=======
->>>>>>> d5ca6f54f8d7f579c2c413ec7c2306bde6d5018f
 os.system("pwd")
 os.system("python openALPR.py testoutput2.avi")
 video.release()

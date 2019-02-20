@@ -60,7 +60,7 @@ class MainWindow:
 
     def upload(self):
         self.lstatus.configure(text="uploading file.....", anchor=W)
-        self.filename =  filedialog.askopenfilename(initialdir = "/home/vishal/Project/Traffic/TensorFlow/models/research/object_detection",title = "Select file",filetypes = (("all files","*.*"), ("jpeg files","*.jpg")))
+        self.filename =  filedialog.askopenfilename(initialdir = "/home/vishal",title = "Select file",filetypes = (("all files","*.*"), ("jpeg files","*.jpg")))
         
         self.lblfile.configure(text=self.filename, anchor=W)
         self.lstatus.configure(text="file uploaded.....", anchor=W)
@@ -85,8 +85,8 @@ class MainWindow:
         cv2.namedWindow('Processed video', cv2.WINDOW_NORMAL)
         cv2.moveWindow('Unprocessed video', 40,30)
         cv2.moveWindow('Processed video', 1000,30)
-        cv2.resizeWindow('Unprocessed video', 900,700)
-        cv2.resizeWindow('Processed video', 900,700)
+        cv2.resizeWindow('Unprocessed video', 900, 900)
+        cv2.resizeWindow('Processed video', 900, 900)
         self.flag = True
         while self.cap1.isOpened() & self.cap2.isOpened():
             ret1, frame1 = self.cap1.read()
@@ -94,7 +94,7 @@ class MainWindow:
             if ret1 == True & ret2 == True:
                 cv2.imshow("Unprocessed video", frame1)
                 cv2.imshow("Processed video", frame2)
-                if ret1 == False & 0xFF == ord('q'):
+                if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
         self.cap1.release()
         self.cap2.release()
@@ -111,6 +111,7 @@ class MainWindow:
             self.cap2.release()
             self.flag = False
         cv2.destroyAllWindows()
+        os.system('rm out.txt')
 
     def onEnterup(self, e):
         self.bupload['background']="white"
@@ -144,9 +145,8 @@ class MainWindow:
         self.bexit['background']="black"
         self.bexit['fg']="white"
 
-
 root = Tk()
-root.geometry("800x250+550+800")
+root.geometry("800x250+520+800")
 root.configure(bg="black")  
 root.title("Traffic Rule Violation-Detection System")
 M = MainWindow(root)
