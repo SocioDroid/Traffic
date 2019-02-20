@@ -100,7 +100,6 @@ class MainWindow:
         self.cap2.release()
         cv2.destroyAllWindows()
         self.lstatus.configure(text="done.....", anchor=W)
-        self.t.start()
         
         
     def reset(self):

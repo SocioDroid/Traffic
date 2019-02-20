@@ -131,6 +131,9 @@ while(video.isOpened()):
     # i.e. a single-column array, where each item in the column has the pixel RGB value
     ret, frame = video.read()
     frame_expanded = np.expand_dims(frame, axis=0)
+    #height, width, channels = frame.shape
+    width = 1920#int(video.get(3))  # float
+    height = 1080#int(video.get(4)) # float
 
     # Perform the actual detection by running the model with the image as input
     try:
@@ -150,21 +153,52 @@ while(video.isOpened()):
             min_score_thresh=0.80)
     except TypeError:
        break
-    # All the results have been drawn on the frame, so it's time to display it.
-    #cv2.imshow('Object detector', frame)
+    
+   	#cv2.imshow('Object detector', frame)
+
     if not objects :
         #cv2.imwrite("test_images/frame%d.jpg" % count, frame)
         VideoFileOutput2.write(frame)
+        
         count = count + 1
-    
+        objects1 = []
+        for index, value in enumerate(classes[0]):
+            object_dict = {}
+            if scores[0, index] > threshold:
+                object_dict[(category_index.get(value)).get('name').encode('utf8')] = scores[0, index]
+                objects1.append(object_dict)
+    		
+        try:
+            if b'helmet' in objects1[0].keys():
+    	        print ("HElmet Found")
+        except IndexError:
+    	    pass
+        
+        try:
+            if b'nohelmet' in objects1[0].keys():
+    	        #print("NoHelmet Found")
+                
+                ymin = int((boxes[0][0][0]*height))
+                xmin = int((boxes[0][0][1]*width))
+                ymax = int((boxes[0][0][2]*height))
+                xmax = int((boxes[0][0][3]*width))
+        
+                Result = np.array(frame[ymin:ymax,xmin:xmax])
+                cv2.imwrite('tested_video_cropped.jpg',Result)
+        except IndexError:
+    	    pass
+    		
+        
+        
     VideoFileOutput.write(frame)
-
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
         break
-print("O detection")
+#print("O detection")
+
 # Clean up
-os.system("pwd")
-os.system("python openALPR.py testoutput2.avi")
+#os.system("pwd")
+#os.system("python openALPR.py testoutput2.avi")
+os.system("python openALPR.py tested_video_cropped.jpg")
 video.release()
 cv2.destroyAllWindows()

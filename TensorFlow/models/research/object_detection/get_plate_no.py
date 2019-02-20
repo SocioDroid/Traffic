@@ -26,24 +26,28 @@ noplat = noplat[:blank]
 
 noplat=re.sub("[^a-zA-Z0-9]+", "", noplat) 
 print(noplat)
-with open('out.txt','w') as f:
-    f.write(noplat)
+if noplat=="":
+    print ("NUMBER PLATE NOT DETECTED!!!")
+    pass
+else:
+    with open('out.txt','w') as f:
+        f.write(noplat)
 
-v_file = str(sys.argv[2])
+    v_file = str(sys.argv[2])
 
-os.system('python video.py '+v_file+' '+noplat) 
+    os.system('python video.py '+v_file+' '+noplat) 
 
-#+v_file+' '+noplat)
+    #+v_file+' '+noplat)
 
-# imageName=noplat+'.jpg'
-# #CAPTURE IMAGE OF THE RIDER
-# v_file = str(sys.argv[2])
-# cap = cv2.VideoCapture(v_file)
-# flag = False
-# while cap.isOpened():
-#     ret, frame = cap.read()
-#     if ret == True:
-#         cv2.imwrite(imageName, frame)
-#         flag = True
-#     if flag:
-#         break
+    # imageName=noplat+'.jpg'
+    # #CAPTURE IMAGE OF THE RIDER
+    # v_file = str(sys.argv[2])
+    # cap = cv2.VideoCapture(v_file)
+    # flag = False
+    # while cap.isOpened():
+    #     ret, frame = cap.read()
+    #     if ret == True:
+    #         cv2.imwrite(imageName, frame)
+    #         flag = True
+    #     if flag:
+    #         break
