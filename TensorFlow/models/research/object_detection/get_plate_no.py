@@ -28,7 +28,6 @@ noplat=re.sub("[^a-zA-Z0-9]+", "", noplat)
 print(noplat)
 if noplat=="":
     print ("NUMBER PLATE NOT DETECTED!!!")
-    pass
 else:
     with open('out.txt','w') as f:
         f.write(noplat)

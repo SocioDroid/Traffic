@@ -60,8 +60,7 @@ class MainWindow:
 
     def upload(self):
         self.lstatus.configure(text="uploading file.....", anchor=W)
-        self.filename =  filedialog.askopenfilename(initialdir = "/home/vishal",title = "Select file",filetypes = (("all files","*.*"), ("jpeg files","*.jpg")))
-        
+        self.filename =  filedialog.askopenfilename(initialdir = "/home/vishal/Project/Traffic/Tensorflow/models/research/ob",title = "Select file",filetypes = (("avi files", "*.avi"), ("mp4 files","*.mp4")))
         self.lblfile.configure(text=self.filename, anchor=W)
         self.lstatus.configure(text="file uploaded.....", anchor=W)
 

@@ -1,21 +1,3 @@
-######## Video Object Detection Using Tensorflow-trained Classifier #########
-#
-# Author: Evan Juras
-# Date: 1/16/18
-# Description: 
-# This program uses a TensorFlow-trained classifier to perform object detection.
-# It loads the classifier uses it to perform object detection on a video.
-# It draws boxes and scores around the objects of interest in each frame
-# of the video.
-
-## Some of the code is copied from Google's example at
-## https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
-
-## and some is copied from Dat Tran's example at
-## https://github.com/datitran/object_detector_app/blob/master/object_detection_app.py
-
-## but I changed it to make it more understandable to me.
-
 # Import packages
 import os
 import cv2
@@ -110,20 +92,15 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 # Open video file
 video = cv2.VideoCapture(PATH_TO_VIDEO)
 video2 = cv2.VideoCapture(PATH_TO_VIDEO)
-total = 0
-total = count_frames_manual(video2)
-print("Total Frames = ")
-print(total)
-#SAVE VIDEO TO FILE
 filename="testoutput.avi"
 codec=cv2.VideoWriter_fourcc('m','p','4','v')#fourcc stands for four character code
-framerate=30
+framerate=10
 resolution=(1920,1080)
 VideoFileOutput=cv2.VideoWriter(filename,codec,framerate, resolution)
 VideoFileOutput2=cv2.VideoWriter("testoutput2.avi",codec,framerate, resolution)
 count = 0
-threshold = 0.8
-
+threshold = 0.9
+itration = 0
 while(video.isOpened()):
     objects = []
     i=0
@@ -131,10 +108,8 @@ while(video.isOpened()):
     # i.e. a single-column array, where each item in the column has the pixel RGB value
     ret, frame = video.read()
     frame_expanded = np.expand_dims(frame, axis=0)
-    #height, width, channels = frame.shape
     width = 1920#int(video.get(3))  # float
     height = 1080#int(video.get(4)) # float
-
     # Perform the actual detection by running the model with the image as input
     try:
         (boxes, scores, classes, num) = sess.run(
@@ -153,9 +128,6 @@ while(video.isOpened()):
             min_score_thresh=0.80)
     except TypeError:
        break
-    
-   	#cv2.imshow('Object detector', frame)
-
     if not objects :
         #cv2.imwrite("test_images/frame%d.jpg" % count, frame)
         VideoFileOutput2.write(frame)
@@ -167,12 +139,6 @@ while(video.isOpened()):
             if scores[0, index] > threshold:
                 object_dict[(category_index.get(value)).get('name').encode('utf8')] = scores[0, index]
                 objects1.append(object_dict)
-    		
-        try:
-            if b'helmet' in objects1[0].keys():
-    	        print ("HElmet Found")
-        except IndexError:
-    	    pass
         
         try:
             if b'nohelmet' in objects1[0].keys():
@@ -184,21 +150,18 @@ while(video.isOpened()):
                 xmax = int((boxes[0][0][3]*width))
         
                 Result = np.array(frame[ymin:ymax,xmin:xmax])
-                cv2.imwrite('tested_video_cropped.jpg',Result)
+                cv2.imwrite('cropped/tested_video_cropped'+str(itration)+'.jpg',Result)
+                itration = itration + 1
+                print(itration)
         except IndexError:
     	    pass
-    		
-        
-        
     VideoFileOutput.write(frame)
+
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
         break
-#print("O detection")
-
+print("Object detection")
 # Clean up
-#os.system("pwd")
-#os.system("python openALPR.py testoutput2.avi")
-os.system("python openALPR.py tested_video_cropped.jpg")
+os.system("python openALPR.py testoutput2.avi")
 video.release()
 cv2.destroyAllWindows()
